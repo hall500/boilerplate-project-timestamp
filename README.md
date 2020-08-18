@@ -17,7 +17,7 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 * https://glitch.com/edit/#!/hall500-boilerplate-project-timestamp/api/timestamp/2015-12-25
 * https://glitch.com/edit/#!/hall500-boilerplate-project-timestamp/api/timestamp/1451001600000
 
-## Error Example:
+#### Error Example:
 * https://glitch.com/edit/#!/hall500-boilerplate-project-timestamp/api/timestamp/test
 
 #### Example output:

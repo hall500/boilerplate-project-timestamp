@@ -26,10 +26,13 @@ app.get("/api/hello", function (req, res) {
 
 
 app.get("/api/timestamp/:date_string", function(req, res){
-  const dstring = parseInt(req.params.date_string);
-  const d = new Date(dstring);
+  const dstring = req.params.date_string;
+  let d = new Date(dstring);
   if(!(d.getTime() === d.getTime())){
-    if()
+    if(!parseInt(dstring)){
+      res.json({ "error": "Invalid Date"});
+    }
+    d = new Date(parseInt(dstring));
   }
   
   res.json({

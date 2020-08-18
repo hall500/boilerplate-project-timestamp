@@ -25,8 +25,8 @@ app.get("/api/hello", function (req, res) {
 });
 
 
-app.get("/api/timestamp/:date_string", function(req, res){
-  const dstring = req.params.date_string;
+app.get("/api/timestamp/:date_string?", function(req, res){
+  const dstring = req.params.date_string || "";
   let d = new Date(dstring);
   if(!(d.getTime() === d.getTime())){
     if(!parseInt(dstring)){

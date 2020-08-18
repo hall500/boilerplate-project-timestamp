@@ -26,7 +26,16 @@ app.get("/api/hello", function (req, res) {
 
 
 app.get("/api/timestamp/:date_string", function(req, res){
-  res.json({ error: req.params.date_string});
+  const d = new Date(req.params.date_string);
+  if(d.getTime() === d.getTime()){
+    res.json({ "error": "Invalid Date"});
+    return;
+  }
+  //const date = new Date(d);
+  res.json({
+    "unix": 14232424242424,
+    "utc": "Sun, 20 Nov 2016 17:31:29 GMT"
+  });
 });
 
 

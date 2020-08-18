@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # API Project: Timestamp Microservice for FCC
 
@@ -15,12 +14,11 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 5. If the date string is **invalid** the api returns a JSON having the structure `{"error" : "Invalid Date" }`.
 
 #### Example usage:
-* https://Timestamp-Microservice--freecodecamp.repl.co/api/timestamp/2015-12-25
-*https://Timestamp-Microservice--freecodecamp.repl.co/api/timestamp/1451001600000
+* https://glitch.com/edit/#!/hall500-boilerplate-project-timestamp/api/timestamp/2015-12-25
+* https://glitch.com/edit/#!/hall500-boilerplate-project-timestamp/api/timestamp/1451001600000
+
+## Error Example:
+* https://glitch.com/edit/#!/hall500-boilerplate-project-timestamp/api/timestamp/test
 
 #### Example output:
 * {"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
-=======
-# boilerplate-project-timestamp
-A boilerplate for a freeCodeCamp project.
->>>>>>> 92a485ced6fc9e89370ff6296213cf3e6330609d

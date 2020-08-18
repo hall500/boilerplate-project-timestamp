@@ -27,7 +27,9 @@ app.get("/api/hello", function (req, res) {
 
 app.get("/api/timestamp/:date_string?", function(req, res){
   const dstring = req.params.date_string || "";
-  let d = new Date(dstring);
+  let d = undefined;
+  if(dstring === "") d = new Date();
+  else d = new Date(dstring);
   if(!(d.getTime() === d.getTime())){
     if(!parseInt(dstring)){
       res.json({ "error": "Invalid Date"});
